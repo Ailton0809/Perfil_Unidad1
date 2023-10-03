@@ -1,0 +1,48 @@
+﻿@model Actividad_1.Models.ViewModels.PerfilViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "Layout";
+}
+
+
+<main>
+    <section class="personal-info">
+        <h2>Perfil</h2>
+
+        <div class="image-wrapper">
+            <img src="~/326915232_1189350915303001_2579423663572860792_n.jpg" alt="Foto de perfil" />
+        </div>
+
+        <div class="wrapper">
+            <p>Nombre: </p>
+            <p>@Model.Nombre</p>
+        </div>
+        <div class="wrapper">
+            <p>Apellido: </p>
+            <p>@Model.Apellido</p>
+        </div>
+        <div class="wrapper">
+            <p>Carrera: </p>
+            <p>@Model.Carrera</p>
+        </div>
+        <div class="wrapper">
+            <p>Celular: </p>
+            <p>@Model.Telefono</p>
+        </div>
+        <div class="wrapper">
+            <p>Numero de control: </p>
+            <p>@Model.NumeroControl</p>
+        </div>
+
+        <div class="wrapper">
+            <p>Semestre: </p>
+            <p>@Model.Semestre</p>
+        </div>
+
+        <a href="/Home">Volver</a>
+
+
+    </section>
+</main>
